@@ -71,7 +71,7 @@ for table in tables:
 #4️⃣ Guardar la información en MongoDB
 
 # Conectar a MongoDB
-client = pymongo.MongoClient("mongodb+srv://omar:elrubius24@saludproject.cw3nz.mongodb.net/")
+client = pymongo.MongoClient("")
 db = client["futbol"]
 collection = db["resultados"]
 
