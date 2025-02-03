@@ -1,0 +1,31 @@
+
+sistema-probabilidad/
+│── microservicio_ingesta/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── requirements.txt
+│── microservicio_gestion/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
+│   ├── requirements.txt
+│── microservicio_probabilidad/
+│   ├── main.py
+│   ├── predictor.py
+│   ├── requirements.txt
+│── microservicio_visualizacion/
+│   ├── main.py
+│   ├── frontend/
+│   ├── requirements.txt
+│── docker-compose.yml
+│── README.md
+
+
+El sistema se divide en cuatro microservicios:
+
+Microservicio de Ingesta de Datos → Guarda partidos en la base de datos.
+Microservicio de Gestión de Equipos y Partidos → Recupera los últimos partidos de un equipo.
+Microservicio de Probabilidad y Predicción → Calcula probabilidades de ganar, perder o empatar.
+Microservicio de Visualización → Interfaz web para mostrar gráficos y resultados.
+Cada uno es un servicio independiente que se comunica a través de solicitudes HTTP y usa MongoDB para almacenar datos.
